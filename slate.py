@@ -16,17 +16,16 @@ while(True):
     cv2.rectangle(frame, (0,height), (width, height-50), (0,0,0),-1)
     # describe the type of font
     # to be used.
-    font = cv2.FONT_HERSHEY_PLAIN
-  
+    font = cv2.FONT_HERSHEY_DUPLEX
     # Use putText() method for
     # inserting text on video
     cv2.putText(frame, 
-                'thanh dat', 
+                'BadClay', 
                 (int(width-200),height-20), 
-                font, 0.65, 
+                font, 0.5, 
                 (255, 255, 255), 
                 1,
-                cv2.LINE_8
+                cv2.LINE_AA
                )
   
     # Display the resulting frame
